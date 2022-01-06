@@ -1,5 +1,5 @@
 *{
-     font-family: Bradley Hand, cursive;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -18,10 +18,12 @@ i{
 h3{
     color: #f9f9f9;
     display: inline;
+    font-size: 1.5em;
 
 }
 
 .container{
+    
     padding: 40px;
     margin: auto;
     max-width: 800px;
