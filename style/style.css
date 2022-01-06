@@ -1,0 +1,52 @@
+*{
+     font-family: Bradley Hand, cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5AA9E6;
+}
+
+i{
+    color: #f9f9f9;
+    font-size: 50px;
+}
+h3{
+    color: #f9f9f9;
+    display: inline;
+
+}
+
+.container{
+    padding: 40px;
+    margin: auto;
+    max-width: 800px;
+    background-color: #7fc8f8;
+    text-align: center;
+    
+}
+#btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #f9f9f9;
+    background-color: #FF6392;
+    border: 2px solid #f9f9f9;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 20px ;
+    transition: 0.5s;
+}
+#btn:hover{
+    background-color: transparent;
+    
+}
+p{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: right;
+    color: #FF6392;
+}
