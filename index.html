@@ -4,17 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/all.min.css">
     <title>Random Quotes</title>
 </head>
 <body>
+    <nav>
+        <ul class="links">
+            <li ><a href="">Generate Quote</a></li>
+            <li><a href="">All Quotes</a></li>
+        </ul>
+    </nav>
+    <section class="random-quotes">
     <div class="container">
-        <button id="btn">Generate Quote</button> <br>
+        <button id="btn">Generate Quote</button> 
+       <select onchange="handleClick()" name="languages" id="languages">
+            <option value="pl">Polski</option>
+            <option value="en">English</option>
+        </select>  <br>
         <i class="fas fa-quote-left"></i> <h3 id="content"></h3>
         <p id = "author"></p>
+    </section>
+    </div>
+    <div class="search-container">
+        <div class="search">
+            <label for=""></label>
+            <input  id="contentKey" type="text"> <button id = "button-search"><i class="fas fa-search"></i></button>
+            <div class="hamburger">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+        </div>
+        <div class="search-content">
+            <div class="search-options">
+                <select name="" id="search-languages">
+                    
+                    <option value="pl">pl</option>
+                    <option value="en">en</option>
+                </select>
+                <!-- <label for="">Min length</label>
+                <input onkeyup= "handleSearch()" id="minLength" type="number">
+                <label for="">Max length</label>
+                <input  id="maxLength" type="number"> -->
+                <label for="">Min length</label>
+                <input type="range" min="1" max="1000" value="1" id="minLength" name="minLength" >
+                <label for="minLength">1</label>
+                <label for="">Max length</label>
+                <input type="range" min="1" max="1000" value="1000" id="maxLength" name="maxLength">
+                <label for="maxLength">1000</label>
+                <label for="">Author</label>
+                <input  id="authorKey" type="text">
+                
+            </div>
+
+            <div class="quotes-container">
+            </div>
+            
+        </div>
+        
     </div>
 
-    <script src="/app.js"></script>
+    <div class="paginations">
+        <button id="previousBtn"><</button>
+        <button id="nextBtn">></button>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
